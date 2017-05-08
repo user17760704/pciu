@@ -50,8 +50,6 @@ public class FileOperations
 			System.out.printf(fileContents.get(i));
 		}
 		
-		writeContentsToFile();
-		
 		br.close();
 	}
 	
