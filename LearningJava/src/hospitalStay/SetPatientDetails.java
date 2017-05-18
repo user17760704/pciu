@@ -29,7 +29,7 @@ public class SetPatientDetails
 			System.out.println("Enter the cost of lab service charges: ");
 			services[i].setLabServiceCharges(input.nextDouble());
 			
-			System.out.println("Will the patient stay overnight?");
+			System.out.println("Will the patient stay overnight? (true/false)");
 			services[i].setOvernightStay(input.nextBoolean());
 		}
 		

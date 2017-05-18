@@ -39,4 +39,19 @@ public class TotalCharge
 		return this._totalCharge;
 	}
 	
+	public double calculateTotalCost(Services service)
+	{
+		
+		if(service.isOvernightStay())
+		{
+			this._totalCharge = service.getLabServiceCharges() + service.getMedicationCharges() + 100;
+		}
+		
+		else
+		{
+			this._totalCharge = service.getLabServiceCharges() + service.getMedicationCharges();
+		}
+		
+		return this._totalCharge;
+	}
 }

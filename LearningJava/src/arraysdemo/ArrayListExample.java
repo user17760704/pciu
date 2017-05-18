@@ -19,9 +19,9 @@ public class ArrayListExample
 		mls.add(p1);
 		mls.add(p2);
 		
-		System.out.println("Array list" + mls.toString());
+		System.out.println("Array list\n" + mls.toString());
 		mls.remove(p2);
-		System.out.println("Array list" + mls.toString());
+		System.out.println("Array list\n" + mls.toString());
 	}
 
 }
