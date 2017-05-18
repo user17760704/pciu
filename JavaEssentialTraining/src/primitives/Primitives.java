@@ -1,6 +1,6 @@
-package NumericPrimitives;
+package primitives;
 
-public class NumericPrimitives
+public class Primitives
 {
 
 	public static void main(String[] args)
@@ -13,12 +13,15 @@ public class NumericPrimitives
 		float f = 1f;
 		double d = 1d;
 		
+		char dollarSign = '\u0024';
+		
 		System.out.println("Byte = " + b);
 		System.out.println("Short = " + s);
 		System.out.println("Int = " + i);
 		System.out.println("Long = " + l);
 		System.out.println("Float = " + f);
 		System.out.println("Double = " + d);
+		System.out.println("Char = " + dollarSign);
 	}
 
 }
