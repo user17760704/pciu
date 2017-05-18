@@ -1,0 +1,24 @@
+package NumericPrimitives;
+
+public class NumericPrimitives
+{
+
+	public static void main(String[] args)
+	{
+		byte b = 1;
+		short s = 1;
+		int i = 1;
+		long l = 1;
+		
+		float f = 1f;
+		double d = 1d;
+		
+		System.out.println("Byte = " + b);
+		System.out.println("Short = " + s);
+		System.out.println("Int = " + i);
+		System.out.println("Long = " + l);
+		System.out.println("Float = " + f);
+		System.out.println("Double = " + d);
+	}
+
+}
