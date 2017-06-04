@@ -28,13 +28,58 @@ public class StringOps
 		
 		String x ="z";
 		
-		for(int i = 0; i < 3; i++)
-		{
-			x = input.nextLine();
-			sb.append(x);
-		}
+//		for(int i = 0; i < 3; i++)
+//		{
+//			x = input.nextLine();
+//			sb.append(x);
+//		}
 		
 		System.out.println(sb);
+		
+		String str4 = "Hello";
+		String str5 = "Hello";
+		
+		if(str4 == str5)
+		{
+			System.out.println("Match");
+		}
+		else
+		{
+			System.out.println("Not identical");
+		}
+		
+		if(str4.equals(str5))
+		{
+			System.out.println("They are equal");
+		}
+		else
+		{
+			System.out.println("They are not equal");
+		}
+		
+		String part1 = str4 + str5;
+		String part2 = "HelloHello";
+		
+		System.out.println(part1);
+		System.out.println(part2);
+		
+		if(part1 == part2)
+		{
+			System.out.println("Match");
+		}
+		else
+		{
+			System.out.println("Not identical");
+		}
+		
+		if(part1.equals(part2))
+		{
+			System.out.println("They are equal");
+		}
+		else
+		{
+			System.out.println("They are not equal");
+		}
 		
 	}
 }
