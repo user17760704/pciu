@@ -21,6 +21,19 @@ public class Loops
 			}	
 		}
 		
+//		Decrementing for loop
+		for(int i = (months.length-1); i >= 0; i--)
+		{
+			if(i > 0)
+			{
+				System.out.print(months[i] + ", ");
+			}
+			else
+			{
+				System.out.println(months[i] + ".");
+			}
+		}		
+		
 		for (String month : months)
 		{
 			System.out.print(month + ", ");
