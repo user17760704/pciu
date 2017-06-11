@@ -21,6 +21,8 @@ public class Loops
 			}	
 		}
 		
+		System.out.println("This is a test!!");
+		
 //		Decrementing for loop
 		for(int i = (months.length-1); i >= 0; i--)
 		{
