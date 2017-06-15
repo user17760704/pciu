@@ -38,9 +38,46 @@ public class Loops
 		
 		for (String month : months)
 		{
-			System.out.print(month + ", ");
+			if (month.equals("Dec"))
+			{
+				System.out.println(month + ". ");
+			}
+			else
+			{
+				System.out.print(month + ", ");
+			}
 		}
-
+		
+		int counter = 0; 
+		while (counter < months.length)
+		{
+			if (months[counter].equals("Dec"))
+			{
+				System.out.println(months[counter] + ". ");
+			}
+			else
+			{
+				System.out.print(months[counter] + ", ");
+			}
+			
+			counter++;
+		}
+		
+		counter = 0;
+		do
+		{
+			if (months[counter].equals("Dec"))
+			{
+				System.out.println(months[counter] + ". ");
+			}
+			else
+			{
+				System.out.print(months[counter] + ", ");
+			}
+			
+			counter++;
+		} while (counter < months.length); 
+			
 	}
 
 }
