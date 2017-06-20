@@ -8,11 +8,25 @@ public class Methods
 	
 	public static void main(String[] args)
 	{
-		System.out.println("For loop: " + forLoop());
+		System.out.println(forLoop("For loop"));
 	}
 	
-	public static StringBuilder forLoop()
+	public static StringBuilder forLoop(String label)
 	{
+		System.out.println(label);
+		for (int i = 0; i < label.length(); i++)
+		{
+			if(i == (label.length() - 1))
+			{
+				System.out.println("*");
+			}
+			else
+			{
+				System.out.print("*");
+			}
+			
+		}
+		
 		StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < months.length; i++)
 		{
