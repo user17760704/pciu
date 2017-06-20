@@ -27,6 +27,15 @@ public class SimpleArrays
 		{
 			System.out.println(strings[i]);
 		}
+		
+		int[] copied = new int[ints.length];
+		System.arraycopy(ints, 0, copied, 0, ints.length);
+		
+		for(int i = 0; i < copied.length; i++)
+		{
+			System.out.println(copied[i]);
+		}
+		
 	}
 
 }
