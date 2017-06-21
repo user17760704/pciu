@@ -6,6 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.Set;
 
 public class LoopThroughCollections
 {
@@ -13,10 +14,19 @@ public class LoopThroughCollections
 	
 	public static void main(String[] args)
 	{
-		List<String> list = putElementsInList(3);
+//		List<String> list = putElementsInList(3);
+		List<String> list = new ArrayList<>();
+		list.add("a");
+		list.add("b");
+		list.add("c");
+		
 		iterateOverArrayList(list);
 		
-		Map<String, String> map = putElementsInMap(3);
+//		Map<String, String> map = putElementsInMap(3);
+		Map<String, String> map = new HashMap<>();
+		map.put("abc1", "123");
+		map.put("abc2", "456");
+		map.put("abc3", "789");
 		iterateOverHashMap(map);
 		
 	}
@@ -61,6 +71,17 @@ public class LoopThroughCollections
 	{
 		System.out.println("toString()");
 		System.out.println(map);
+		
+		System.out.println("Hash map iterator");
+//		Unique set to keys to iterate over
+		Set<String> keys = map.keySet();
+		Iterator<String> iterator = keys.iterator();
+		while(iterator.hasNext())
+		{
+			String key = iterator.next();
+			System.out.println("Key: " + key + "; Value: " + map.get(key));
+		}
+		
 	}
 	
 	public static Map<String, String> putElementsInMap(int numberOfElementsInMap)
