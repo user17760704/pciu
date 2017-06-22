@@ -82,6 +82,12 @@ public class LoopThroughCollections
 			System.out.println("Key: " + key + "; Value: " + map.get(key));
 		}
 		
+		System.out.println("HashMap ForEach");
+		for(String key : keys)
+		{
+			System.out.println("Key: " + key + "; Value: " + map.get(key));
+		}
+		
 	}
 	
 	public static Map<String, String> putElementsInMap(int numberOfElementsInMap)
