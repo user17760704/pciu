@@ -1,9 +1,12 @@
 package calculatorClass.operations;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class MathHelper 
 {
+	public static Scanner input = new Scanner(System.in);
+	
 	public static void addition(ArrayList<String> listOfNumbers)
 	{
 		double d = 0;
@@ -74,5 +77,31 @@ public class MathHelper
 		}
 		
 		System.out.println("Division: " + d);
+	}
+	
+	public static void performOperation(ArrayList<String> listOfNumbers)
+	{
+		System.out.println("Choose an operation (+,-,*,/)");
+		String operation = input.next();
+		
+		switch (operation)
+		{
+			case "+":
+				MathHelper.addition(listOfNumbers);
+				break;
+			case "-":
+				MathHelper.subtraction(listOfNumbers);
+				break;
+			case "*":
+				MathHelper.multiplication(listOfNumbers);
+				break;
+			case "/":
+				MathHelper.division(listOfNumbers);
+				break;
+			default:
+				System.out.println("Not a valid choice.");
+		}
+		
+		input.close();
 	}
 }

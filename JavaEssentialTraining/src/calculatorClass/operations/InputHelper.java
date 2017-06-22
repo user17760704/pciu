@@ -3,7 +3,7 @@ package calculatorClass.operations;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class UserInput 
+public class InputHelper 
 {
 	public static Scanner input = new Scanner(System.in);
 	
@@ -29,31 +29,5 @@ public class UserInput
 		}
 		
 		return al;
-	}
-	
-	public static void performOperation(ArrayList<String> listOfNumbers)
-	{
-		System.out.println("Choose an operation (+,-,*,/)");
-		String operation = input.next();
-		
-		switch (operation)
-		{
-			case "+":
-				MathHelper.addition(listOfNumbers);
-				break;
-			case "-":
-				MathHelper.subtraction(listOfNumbers);
-				break;
-			case "*":
-				MathHelper.multiplication(listOfNumbers);
-				break;
-			case "/":
-				MathHelper.division(listOfNumbers);
-				break;
-			default:
-				System.out.println("Not a valid choice.");
-		}
-		
-		input.close();
 	}
 }
