@@ -2,14 +2,14 @@ package olive;
 
 import java.util.List;
 
-import olive.model.OliveModelWithEnums;
+import olive.model.OliveWithEnums;
 
 public class OlivePressEnums
 {
-	public double getOil(List<OliveModelWithEnums> olives)
+	public double getOil(List<OliveWithEnums> olives)
 	{
 		double yeild = 0; 
-		for (OliveModelWithEnums olive : olives)
+		for (OliveWithEnums olive : olives)
 		{
 			yeild += olive.getYeild();
 		}

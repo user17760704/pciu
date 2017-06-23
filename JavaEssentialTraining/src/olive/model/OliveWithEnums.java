@@ -1,6 +1,6 @@
 package olive.model;
 
-public class OliveModelWithEnums
+public class OliveWithEnums
 {
 	private OliveNames _typeOfOlive; 
 	private long _color;
@@ -31,7 +31,7 @@ public class OliveModelWithEnums
 		this._yeild = yeild;
 	}
 	
-	public OliveModelWithEnums(OliveNames typeOfOlive, long color, double yeild)
+	public OliveWithEnums(OliveNames typeOfOlive, long color, double yeild)
 	{
 		super();
 		this._typeOfOlive = typeOfOlive;
@@ -39,7 +39,7 @@ public class OliveModelWithEnums
 		this._yeild = yeild;
 	}
 	
-	public OliveModelWithEnums()
+	public OliveWithEnums()
 	{
 		super();
 		this._typeOfOlive = OliveNames.KALAMATA;
@@ -47,7 +47,7 @@ public class OliveModelWithEnums
 		this._yeild = 3;
 	}
 	
-	public OliveModelWithEnums(OliveNames typeOfOlive)
+	public OliveWithEnums(OliveNames typeOfOlive)
 	{
 		super();
 		this._color = 0x2E0854;
