@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import olive.model.OliveModel;
+import olive.model.constants.OliveModelConstants;
 import olive.operations.OlivePress;
 
 public class OliveMainConstants
@@ -13,9 +14,9 @@ public class OliveMainConstants
 	{
 		List<OliveModel> oliveModels = new ArrayList<>();
 		
-		oliveModels.add(new OliveModel(OliveModel.KALAMATA, 0x2E0854, 3));
-		oliveModels.add(new OliveModel(OliveModel.LIGURIAN, 0x2E0854, 4));
-		oliveModels.add(new OliveModel(OliveModel.KALAMATA, 0x2E0854, 5));
+		oliveModels.add(new OliveModel(OliveModelConstants.KALAMATA, 0x2E0854, 3));
+		oliveModels.add(new OliveModel(OliveModelConstants.LIGURIAN, 0x2E0854, 4));
+		oliveModels.add(new OliveModel(OliveModelConstants.KALAMATA, 0x2E0854, 5));
 		
 		for (OliveModel oliveModel : oliveModels)
 		{

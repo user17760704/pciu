@@ -1,7 +1,10 @@
-package olive.model;
+package olive.model.constants;
 
-public class OliveModel
+public class OliveModelConstants
 {
+	public static final String KALAMATA = "Kalamata";
+	public static final String LIGURIAN = "Ligurian";
+	
 	private String _typeOfOlive;
 	private long _color;
 	private double _yeild;
@@ -31,7 +34,7 @@ public class OliveModel
 		this._yeild = yeild;
 	}
 	
-	public OliveModel(String typeOfOlive, long color, double yeild)
+	public OliveModelConstants(String typeOfOlive, long color, double yeild)
 	{
 		super();
 		this._typeOfOlive = typeOfOlive;
@@ -39,7 +42,7 @@ public class OliveModel
 		this._yeild = yeild;
 	}
 	
-	public OliveModel()
+	public OliveModelConstants()
 	{
 		super();
 		this._typeOfOlive = "Kalamata";
