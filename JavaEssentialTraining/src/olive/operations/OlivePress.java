@@ -2,16 +2,16 @@ package olive.operations;
 
 import java.util.List;
 
-import olive.model.Olive;
+import olive.model.OliveModel;
 
 public class OlivePress
 {
-	public double getOil(List<Olive> olives)
+	public double getOil(List<OliveModel> oliveModels)
 	{
 		double yeild = 0; 
-		for (Olive olive : olives)
+		for (OliveModel oliveModel : oliveModels)
 		{
-			yeild += olive.getYeild();
+			yeild += oliveModel.getYeild();
 		}
 		
 		return yeild;

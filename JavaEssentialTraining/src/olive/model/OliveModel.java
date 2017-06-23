@@ -1,6 +1,6 @@
 package olive.model;
 
-public class Olive
+public class OliveModel
 {
 	public static final String KALAMATA = "Kalamata";
 	public static final String LIGURIAN = "Ligurian";
@@ -34,7 +34,7 @@ public class Olive
 		this._yeild = yeild;
 	}
 	
-	public Olive(String typeOfOlive, long color, double yeild)
+	public OliveModel(String typeOfOlive, long color, double yeild)
 	{
 		super();
 		this._typeOfOlive = typeOfOlive;
@@ -42,7 +42,7 @@ public class Olive
 		this._yeild = yeild;
 	}
 	
-	public Olive()
+	public OliveModel()
 	{
 		super();
 		this._typeOfOlive = "Kalamata";

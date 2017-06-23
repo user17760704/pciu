@@ -8,7 +8,7 @@ import olive.operations.OlivePressEnums;
 import olive.model.enums.OliveColorEnums;
 import olive.model.enums.OliveModelEnums;
 
-public class MainOliveEnums
+public class OliveMainEnums
 {
 	public static void main(String[] args)
 	{
