@@ -3,8 +3,8 @@ package olive;
 import java.util.ArrayList;
 import java.util.List;
 
-import olive.model.OliveWithEnums;
-import olive.model.OliveNames;
+import olive.model.enums.OliveNames;
+import olive.model.enums.OliveWithEnums;
 
 public class Enums
 {

@@ -2,7 +2,7 @@ package olive;
 
 import java.util.List;
 
-import olive.model.OliveWithEnums;
+import olive.model.enums.OliveWithEnums;
 
 public class OlivePressEnums
 {

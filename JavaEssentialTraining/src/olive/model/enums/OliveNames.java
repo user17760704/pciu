@@ -1,4 +1,4 @@
-package olive.model;
+package olive.model.enums;
 
 public enum OliveNames
 {
