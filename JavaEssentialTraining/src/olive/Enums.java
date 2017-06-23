@@ -3,7 +3,7 @@ package olive;
 import java.util.ArrayList;
 import java.util.List;
 
-import olive.model.enums.OliveNames;
+import olive.model.enums.OliveEnums;
 import olive.model.enums.OliveWithEnums;
 
 public class Enums
@@ -12,9 +12,9 @@ public class Enums
 	{
 		List<OliveWithEnums> olives = new ArrayList<>();
 		
-		olives.add(new OliveWithEnums(OliveNames.KALAMATA, 0x2E0854, 3));
-		olives.add(new OliveWithEnums(OliveNames.LIGURIAN, 0x2E0854, 4));
-		olives.add(new OliveWithEnums(OliveNames.UNKNOWN, 0x2E0854, 5));
+		olives.add(new OliveWithEnums(OliveEnums.KALAMATA, 0x2E0854, 3));
+		olives.add(new OliveWithEnums(OliveEnums.LIGURIAN, 0x2E0854, 4));
+		olives.add(new OliveWithEnums(OliveEnums.UNKNOWN, 0x2E0854, 5));
 		
 		for (OliveWithEnums olive : olives)
 		{
@@ -28,7 +28,7 @@ public class Enums
 		double yeild = ope.getOil(olives);
 		System.out.println("The yeild is: " + yeild);
 		
-		OliveNames name = OliveNames.KALAMATA;
+		OliveEnums name = OliveEnums.KALAMATA;
 		System.out.println(name);
 	}
 }
