@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import olive.model.Olive;
+import olive.operations.OlivePress;
 
-public class Constants
+public class MainOliveConstants
 {
 
 	public static void main(String[] args)

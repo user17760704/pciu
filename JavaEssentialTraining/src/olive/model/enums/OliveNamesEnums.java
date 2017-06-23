@@ -1,6 +1,6 @@
 package olive.model.enums;
 
-public enum OliveEnums
+public enum OliveNamesEnums
 {
 	KALAMATA("Kalamata"),LIGURIAN("Ligurian"),UNKNOWN("Unknown");
 	
@@ -8,7 +8,7 @@ public enum OliveEnums
 	
 //	We cannot use the public keyword because a constructor for an enum, it can only be called by 
 //	itself
-	OliveEnums(String typeOfOlive)
+	OliveNamesEnums(String typeOfOlive)
 	{
 		this._typeOfOlive = typeOfOlive;
 	}
