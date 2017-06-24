@@ -1,4 +1,4 @@
-package commonJavaLibraries;
+package commonJavaLibraries.fileio;
 
 import java.io.File;
 import java.io.IOException;
