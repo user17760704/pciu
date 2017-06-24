@@ -26,6 +26,7 @@ public class Main
 		File source = new File(sourceFile);
 		File destination = new File(targetFile);
 		
+//		This is try with resources. This way I don't have to close the file reader etc.
 		try (FileReader fr = new FileReader(source); 
 			BufferedReader br = new BufferedReader(fr);
 			FileWriter fw = new FileWriter(destination))
