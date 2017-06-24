@@ -2,10 +2,10 @@ package olive.model.enums;
 
 public class OliveModelEnums
 {
-	private OliveNamesEnums _typeOfOlive; 
+	private OliveNamesEnums _typeOfOlive;
 	private OliveColorEnums _color;
 	private double _yeild;
-	
+
 	public OliveNamesEnums getTypeOfOlive()
 	{
 		return _typeOfOlive;
@@ -30,7 +30,7 @@ public class OliveModelEnums
 	{
 		this._yeild = yeild;
 	}
-	
+
 	public OliveModelEnums(OliveNamesEnums typeOfOlive, OliveColorEnums color, double yeild)
 	{
 		super();
@@ -38,7 +38,7 @@ public class OliveModelEnums
 		this._color = color;
 		this._yeild = yeild;
 	}
-	
+
 	public OliveModelEnums()
 	{
 		super();
@@ -46,7 +46,7 @@ public class OliveModelEnums
 		this._color = OliveColorEnums.BLACK;
 		this._yeild = 3;
 	}
-	
+
 	public OliveModelEnums(OliveNamesEnums typeOfOlive)
 	{
 		super();

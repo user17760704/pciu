@@ -1,12 +1,13 @@
-package interfaces;
+package olive;
 
 import java.util.ArrayList;
 import java.util.List;
 
-
+import olive.interfaces.Press;
+import olive.model.KalamataEnums;
+import olive.model.LigurianEnums;
 import olive.model.enums.OliveModelEnums;
 import olive.operations.OlivePress;
-import olive.model.*;
 
 public class OliveMainInterfaces
 {
@@ -23,9 +24,14 @@ public class OliveMainInterfaces
 		olives.add(new LigurianEnums());
 		
 		OlivePress op = new OlivePress();
-		
 		double yield = op.getOil(olives);
+		System.out.println("Current oil: " + op.getCurrentOil());
+		System.out.println("Yield : " + yield);
 		
-		System.out.println("Yield: " + yield);		
+		
+		Press press = new OlivePress();
+		press.setOil(10);
+		System.out.println("Current oil: " + press.getCurrentOil());
+		System.out.println("Yeild = " + press.getOil(olives));
 	}
 }
