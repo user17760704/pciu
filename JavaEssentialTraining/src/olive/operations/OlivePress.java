@@ -1,12 +1,12 @@
 package olive.operations;
 
-import java.util.ArrayList;
 import java.util.List;
 
+import interfaces.Press;
 import olive.model.OliveModel;
 import olive.model.enums.OliveModelEnums;
 
-public class OlivePress
+public class OlivePress implements Press
 {
 	public double getOil(List<?> oliveModels)
 	{
@@ -34,12 +34,12 @@ public class OlivePress
 			}
 		}
 		
-//		double yeild = 0; 
-//		for (OliveModel oliveModel : oliveModels)
-//		{
-//			yeild += oliveModel.getYeild();
-//		}
-//		
 		return yeild;
+	}
+
+	@Override
+	public void setOil(int oil) 
+	{
+		
 	}
 }

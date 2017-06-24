@@ -1,4 +1,4 @@
-package olive;
+package interfaces;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import olive.model.enums.OliveModelEnums;
 import olive.operations.OlivePress;
 import olive.model.*;
 
-public class OliveMainExtendingClasses
+public class OliveMainInterfaces
 {
 
 	public static void main(String[] args)
@@ -26,10 +26,6 @@ public class OliveMainExtendingClasses
 		
 		double yield = op.getOil(olives);
 		
-		System.out.println("Yield: " + yield);
-		
-		
+		System.out.println("Yield: " + yield);		
 	}
-
-
 }
