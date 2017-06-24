@@ -3,6 +3,7 @@ package olive.operations;
 import java.util.List;
 
 import olive.model.OliveModel;
+import olive.model.abstractClass.OliveModelAbstract;
 import olive.model.enums.OliveModelEnums;
 import olive.operations.interfaces.Press;
 
@@ -30,6 +31,16 @@ public class OlivePress implements Press
 			List<OliveModel> olives = (List<OliveModel>) oliveModels;
 
 			for (OliveModel olive : olives)
+			{
+				yeild += olive.getYeild();
+			}
+		}
+		
+		else if (object instanceof OliveModelAbstract)
+		{
+			List<OliveModelAbstract> olives = (List<OliveModelAbstract>) oliveModels;
+
+			for (OliveModelAbstract olive : olives)
 			{
 				yeild += olive.getYeild();
 			}

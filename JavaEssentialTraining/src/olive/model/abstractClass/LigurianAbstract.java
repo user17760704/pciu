@@ -11,6 +11,6 @@ public class LigurianAbstract extends OliveModelAbstract
 	public String getOrigin()
 	{
 		// TODO Auto-generated method stub
-		return null;
+		return "Italy";
 	}
 }

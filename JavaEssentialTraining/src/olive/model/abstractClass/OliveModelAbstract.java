@@ -1,7 +1,6 @@
 package olive.model.abstractClass;
 
-import olive.model.enums.OliveColorEnums;
-import olive.model.enums.OliveNamesEnums;
+
 
 public abstract class OliveModelAbstract
 {
@@ -19,6 +18,9 @@ public abstract class OliveModelAbstract
 	}
 	public double getYeild()
 	{
+		System.out.println("The olive is from: " + getOrigin());
+		System.out.println("The tyoe pf olive is: " + _typeOfOlive);
+		System.out.println("The yeild is: " + _yeild);
 		return _yeild;
 	}
 	public void setTypeOfOlive(OliveNamesAbstract typeOfOlive)
@@ -50,7 +52,7 @@ public abstract class OliveModelAbstract
 		this._yeild = 3;
 	}
 
-	public OliveModelAbstract(OliveNamesEnums typeOfOlive)
+	public OliveModelAbstract(OliveNamesAbstract typeOfOlive)
 	{
 		super();
 		this._color = OliveColorAbstract.BLACK;

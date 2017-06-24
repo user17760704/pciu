@@ -11,7 +11,7 @@ public class KalamataAbstract extends OliveModelAbstract
 	public String getOrigin()
 	{
 		// TODO Auto-generated method stub
-		return null;
+		return "Greece";
 	}
 	
 	
