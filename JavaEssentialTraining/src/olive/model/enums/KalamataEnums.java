@@ -1,8 +1,4 @@
-package olive.model;
-
-import olive.model.enums.OliveColorEnums;
-import olive.model.enums.OliveModelEnums;
-import olive.model.enums.OliveNamesEnums;
+package olive.model.enums;
 
 public class KalamataEnums extends OliveModelEnums
 {

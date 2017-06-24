@@ -1,4 +1,4 @@
-package olive.interfaces;
+package olive.operations.interfaces;
 
 import java.util.List;
 

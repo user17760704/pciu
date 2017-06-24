@@ -3,11 +3,11 @@ package olive;
 import java.util.ArrayList;
 import java.util.List;
 
-import olive.interfaces.Press;
-import olive.model.KalamataEnums;
-import olive.model.LigurianEnums;
+import olive.model.enums.KalamataEnums;
+import olive.model.enums.LigurianEnums;
 import olive.model.enums.OliveModelEnums;
 import olive.operations.OlivePress;
+import olive.operations.interfaces.Press;
 
 public class OliveMainInterfaces
 {

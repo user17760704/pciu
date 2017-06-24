@@ -3,7 +3,8 @@ package olive;
 import java.util.ArrayList;
 import java.util.List;
 
-
+import olive.model.enums.KalamataEnums;
+import olive.model.enums.LigurianEnums;
 import olive.model.enums.OliveModelEnums;
 import olive.operations.OlivePress;
 import olive.model.*;

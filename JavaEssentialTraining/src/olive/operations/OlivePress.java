@@ -2,9 +2,9 @@ package olive.operations;
 
 import java.util.List;
 
-import olive.interfaces.Press;
 import olive.model.OliveModel;
 import olive.model.enums.OliveModelEnums;
+import olive.operations.interfaces.Press;
 
 public class OlivePress implements Press
 {
