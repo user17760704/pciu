@@ -7,7 +7,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Main
+public class CopyFile
 {
 
 	public static void main(String[] args) throws FileNotFoundException, IOException
@@ -27,6 +27,7 @@ public class Main
 		File destination = new File(targetFile);
 		
 //		This is try with resources. This way I don't have to close the file reader etc.
+//		This syntax is added in later version of java, and it is not fully compatible with all versions
 		try (FileReader fr = new FileReader(source); 
 			BufferedReader br = new BufferedReader(fr);
 			FileWriter fw = new FileWriter(destination))
