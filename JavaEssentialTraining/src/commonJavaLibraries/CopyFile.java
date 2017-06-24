@@ -32,14 +32,14 @@ public class CopyFile
 			BufferedReader br = new BufferedReader(fr);
 			FileWriter fw = new FileWriter(destination))
 		{
-			System.out.println("Source file found in location: " + source.getAbsolutePath());
+			System.out.println("Source file found at location: " + source.getAbsolutePath());
 			String line = br.readLine();
 			while (line != null)
 			{
 				fw.write(line + "\n");
 				line = br.readLine();
 			}
-			System.out.println("Destination of the file is: " + destination.getAbsolutePath());
+			System.out.println("Target file created at location: " + destination.getAbsolutePath());
 		}
 		catch (Exception e)
 		{
