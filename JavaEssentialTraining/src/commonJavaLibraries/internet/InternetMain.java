@@ -3,6 +3,7 @@ package commonJavaLibraries.internet;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 
@@ -19,15 +20,15 @@ public class InternetMain
 {
 	private static final String FLOWERS_FEED = "http://services.hanselandpetal.com/feeds/flowers.xml";
 	
-	public static void main(String[] args)
+	public static void main(String[] args) throws IOException
 	{
+		InputStream is = null;
+		BufferedInputStream bis = null;
 		try
 		{
 			URL url = new URL(FLOWERS_FEED);
-			InputStream is = url.openStream();
-			
-			BufferedInputStream bis = new BufferedInputStream(is);
-			
+			is = url.openStream();
+			bis = new BufferedInputStream(is);
 			StringBuilder sb = new StringBuilder();
 			
 			int data = bis.read();
@@ -54,13 +55,16 @@ public class InternetMain
 //			}
 			
 			System.out.println(sb);
-			
-			
 		}
 		
 		catch(Exception e)
 		{
 			e.printStackTrace();
+		}
+		finally
+		{
+			is.close();
+			bis.close();
 		}
 
 	}
