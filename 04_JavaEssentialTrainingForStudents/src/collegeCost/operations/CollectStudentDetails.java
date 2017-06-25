@@ -64,6 +64,8 @@ public class CollectStudentDetails
 		double costOfCreditHour = input.nextDouble();
 		System.out.println("Enter the cost of supplies per year: ");
 		double costOfSuppliesPerYear = input.nextDouble();
+		System.out.println("Enter other expenses per year: ");
+		double otherExpenses = input.nextDouble();
 		
 		if (onCampus.equalsIgnoreCase("y"))
 		{
@@ -82,8 +84,6 @@ public class CollectStudentDetails
 			int durationOfStay = input.nextInt();
 			System.out.println("Enter Cost of meal plan per month: ");
 			double costOfMealPlan = input.nextDouble();
-			System.out.println("Enter other living expenses per year: ");
-			double otherExpenses = input.nextDouble();
 			
 			e = new Expenses(dormFees, durationOfStay, costOfMealPlan, otherExpenses, numberOfCreditHoursPerYEar, costOfCreditHour, costOfSuppliesPerYear); 
 			
@@ -95,10 +95,10 @@ public class CollectStudentDetails
 		{
 			System.out.println("Enter rent per month: ");
 			double rent = input.nextDouble();
-			System.out.println("Enter other living expenses per year: ");
-			double otherExpenses = input.nextDouble();
 			
 			e = new Expenses(rent, otherExpenses, numberOfCreditHoursPerYEar, costOfCreditHour, costOfSuppliesPerYear);
+			
+			e.setExpensesOffCampus(rent, otherExpenses, numberOfCreditHoursPerYEar, costOfCreditHour, costOfSuppliesPerYear);
 			
 			grandTotal = e.getExpensesOffCampus();
 		}

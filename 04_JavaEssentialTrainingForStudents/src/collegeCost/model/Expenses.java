@@ -113,7 +113,7 @@ public class Expenses
 //		return total;
 //	}
 	
-	public void getExpensesOffCampus(double rent, double otherExpenses, int numberOfCreditHoursPerYear, double costOfCreditHour, double  costOfSuppliesPerYear)
+	public void setExpensesOffCampus(double rent, double otherExpenses, int numberOfCreditHoursPerYear, double costOfCreditHour, double  costOfSuppliesPerYear)
 	{
 		double expensesOffCampus = 0;
 		
