@@ -1,5 +1,6 @@
 package collegeCost.model;
 
+@Deprecated
 public class TuitionExpenses
 {
 	private int _numberOfCreditHoursPerYear;

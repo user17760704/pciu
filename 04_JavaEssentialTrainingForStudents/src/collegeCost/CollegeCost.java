@@ -1,8 +1,7 @@
 package collegeCost;
 
-import collegeCost.model.LivingExpenses;
-import collegeCost.model.TuitionExpenses;
-import collegeCost.operations.CollectStudentExpenseDetails;
+import collegeCost.*;
+import collegeCost.operations.CollectStudentDetails;
 
 /**
  * Compute the yearly expenses for a student
@@ -13,7 +12,7 @@ import collegeCost.operations.CollectStudentExpenseDetails;
  * 
  * For all students, ask the following: 
  * Name
- * Year (freshman, sophmore, junior, senior)
+ * Year (freshman, sophomore, junior, senior)
  * Cost of supplies (including textbooks)
  * Number of credit hours
  * Cost of credit hour
@@ -28,17 +27,7 @@ public class CollegeCost
 
 	public static void main(String[] args)
 	{
-		
-		CollectStudentExpenseDetails csed = new CollectStudentExpenseDetails();
-		
-		LivingExpenses le = csed.setLivingExpenseDetails();
-		TuitionExpenses te = csed.setTuitionExpenseDetails();
-		
-		System.out.println("Is student on campus: " + le.isLivingInDorm());
-		
-		double total = le.totalLivingExpenses() + te.totalTuitionExpenses();
-		
-		System.out.println("Total expenses: " + total);
+		CollectStudentDetails.collectStudentDetails();
 	}
 
 }

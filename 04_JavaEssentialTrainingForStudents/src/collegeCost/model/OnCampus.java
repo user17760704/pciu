@@ -2,6 +2,7 @@ package collegeCost.model;
 
 import java.util.Scanner;
 
+@Deprecated
 public class OnCampus
 {
 	private static Scanner input = new Scanner(System.in); 

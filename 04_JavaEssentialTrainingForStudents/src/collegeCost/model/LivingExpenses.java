@@ -1,5 +1,6 @@
 package collegeCost.model;
 
+@Deprecated
 public class LivingExpenses
 {
 	private boolean _livingInDorm;
