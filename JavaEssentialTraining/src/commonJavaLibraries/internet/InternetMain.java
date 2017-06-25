@@ -1,8 +1,6 @@
 package commonJavaLibraries.internet;
 
 import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
