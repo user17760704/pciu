@@ -15,5 +15,4 @@ public enum CollegeYear
 	{
 		return _collegeYear;
 	}
-	
 }
